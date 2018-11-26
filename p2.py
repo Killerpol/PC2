@@ -1,24 +1,30 @@
 #Arreglo
 lista = []
-mayor = 0
+numero1 = int(input("Ingrese un numero 1 "))
+numero2 = int(input("Ingrese un numero 2 "))
+numero3 = int(input("Ingrese un numero 3 "))
+numero4 = int(input("Ingrese un numero 4 "))
+numero5 = int(input("Ingrese un numero 5 "))
+
+lista.append(numero1)
+lista.append(numero2)
+lista.append(numero3)
+lista.append(numero4)
+lista.append(numero5)
+print(lista)
 
 
 def menor_numero_arreglo () :
-    
-    for i in range (5):
-        numero = int(input("ingrese un numero"))
-        lista.append(numero) 
-    if numero > mayor:
-        numero = mayor
+    menor = lista[0]
+    for i in range (len(lista)):
+        if lista[i] < menor:
+            menor = lista[i]
+            
+    print(menor)
         
-
-    print (mayor)
-    print (lista)
     
 
 menor_numero_arreglo()
-
-
 
 
 
